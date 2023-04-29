@@ -1,7 +1,7 @@
 /*
  * Autor: Andrés Caso Iglesias
  * Fecha de creación:26/04/2023
- * Descripción: 
+ * Descripción: Añadidos basicos de javaScript (muchos no son necesarios, seria mas efectivo la modificacion del fichero .css)
  */
 
 /*
