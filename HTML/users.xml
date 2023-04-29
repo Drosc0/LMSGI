@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formulario>
+  <registro>
+    <campo>
+      <nombre>nombre</nombre>
+      <tipo>texto</tipo>
+      <etiqueta>Nombre</etiqueta>
+      <requerido>true</requerido>
+    </campo>
+    <campo>
+      <nombre>apellido1</nombre>
+      <tipo>texto</tipo>
+      <etiqueta>Primer apellido</etiqueta>
+      <requerido>true</requerido>
+    </campo>
+    <campo>
+      <nombre>apellido2</nombre>
+      <tipo>texto</tipo>
+      <etiqueta>Segundo apellido</etiqueta>
+      <requerido>true</requerido>
+    </campo>
+    <campo>
+      <nombre>email</nombre>
+      <tipo>email</tipo>
+      <etiqueta>Correo electrónico</etiqueta>
+      <requerido>true</requerido>
+    </campo>
+  </registro>
+</formulario>

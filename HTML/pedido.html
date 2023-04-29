@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+    <head>
+        <title>Pedido</title>
+        <link rel="shortcut icon" href="../IMG/cestacompra.png" type="image/png"/>
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css" media="screen"/>
+        
+        <meta name="author" content="Andres Caso"/>
+    </head>
+
+    <body>
+        <!-- inicio menú-->
+                <div><img id="logo"  src="../IMG/logol.jpeg" alt="La huerta de los gatos" width="300" height="300"/></div>
+                <ul class="horizontal" id="menuInicio">
+                    <li><a href="../HTML/inicio.html" onmouseover="pasarRaton()">Home</a></li>
+                    <li><a href="../HTML/nosotros.html" onmouseover="pasarRaton()">Nosotros</a></li>
+                    <li><a href="../HTML/productos.html" onmouseover="pasarRaton()">Productos</a></li>
+                    <li><a href="../HTML/blog.html" onmouseover="pasarRaton()">Blog</a></li>
+                    <li><a href="../HTML/contacto.htm" onmouseover="pasarRaton()">Contacto</a></li>
+                    <li><a href="../HTML/pedido.html" onmouseover="pasarRaton()">Pedido</a></li>
+                </ul>
+        <!--fin menú--> 
+        
+        <!--productos tienda-->
+        
+        <div id="pedido">
+            <form  method="post" action="../HTML/Datosypagopedido.html">
+                <div id="frescos">
+                    <h4>Productos frescos</h4>
+                    <table>
+                        <tr>
+                            <td><h5>Producto&nbsp;&nbsp;&nbsp;</h5></td>
+                            <td><h5>Descripcion</h5></td>
+                            <td><h5>Imagen</h5></td>
+                        </tr>
+                        <tr>
+                            <td><input name="pedido_Repollo" type="checkbox" value="Repollo"/>Repollo</td>
+                            <td><p>repollo picudo, compacto y tierno</p></td>
+                            <td><img src="../IMG/repollo.jpg" alt="repollo" width="200" height="200"/></td>
+                                
+                        </tr>
+                        <tr>
+                            <td><input name="pedido_acelga" type="checkbox" value="tecnico"/>Acelga</td>
+                            <td><p>acelga "orgasmo rosa" de pencas tiernas, <br/> firmes y de color rosado</p></td>
+                            <td><img src="../IMG/acelga1.jpg" alt="acelga" width="200" height="200"/></td>
+                        </tr>
+                        <tr>
+                            <td><input name="puedido_colrabi" type="checkbox" value="Zanahoria"/>  Colinabo</td>
+                            <td><p> de carne tierna y sabor delicado <br/> con un toque picante </p></td>
+                            <td><img src="../IMG/colrabi.jpg" alt="colrabi" width="200" height="200"/></td>
+                        </tr>
+                    </table>
+                </div> 
+
+                <div id="limpieza">
+                    <h4>&nbsp;Limpieza del hogar</h4> 
+                    <table>
+                        <tr>
+                            <td><h5>Producto&nbsp;&nbsp;&nbsp;</h5></td>
+                            <td><h5>Descripcion</h5></td>
+                            <td><h5>Imagen</h5></td>
+                        </tr>
+                            <tr>
+                            <td><input name="pedido_estropajo" type="checkbox" value="Estropajo"/> Estropajo de lufa</td>
+                            <td><p> esponja vegetal exfoliante <br/>que mejora la circulacion </p></td>
+                            <td><img src="../IMG/lufa.jpg" alt="esponja lufa" width="200" height="200"/></td>
+                        </tr>
+                        <tr>
+                            <td><input name="pedido_raiz" type="checkbox" value="Raiz"/> Raiz de jabonera </td>
+                            <td><p> 500 gramos de raiz fresca <br/> suficiente para elaborar 2 litros de jabon</p></td>
+                            <td><img src="../IMG/jabonera.jpg" alt="raiz jobonera" width="200" height="200"/></td>
+                        </tr>
+                            
+                    </table>   
+                </div> 
+
+                <div id="envio">
+                    <br/><h3>Metodo envio</h3>
+                        <input type="radio" name="entrega" value="envio" checked="checked"/> Recogida en tienda
+                        <input type="radio" name="entrega" value="tienda"/> envio mensajeria
+                    <br/>
+                    <br/>
+                        <input type="reset" name="limpiar" value="Borrar  pedido"/>
+                        <input type="submit" name="pedido" value="Proceder pedido"/>
+                </div>      
+            </form>       
+        </div>
+        <p id="validate">
+            <a href="../HTML/ManualUsuario.html"><img id="manualusuario" src="../IMG/libro.png" alt="manual usuario" width="200" height="200"/></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"> <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss" alt="¡CSS Válido!"/></a>
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+        </p>
+    </body>
+    <script type="text/javascript" src="../JS/codigo.js"></script>
+</html>

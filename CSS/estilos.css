@@ -1,0 +1,81 @@
+/*comunes */ 
+    body {background: #d3f0dd url(../IMG/nube.png) repeat;}
+    h1 { font: oblique 10em Gill Sans; color: #0b0b9c;}
+    h2 { font: oblique 5em Gill Sans; color: #d66d47;}
+    h3 { font: normal  2em Gill Sans ; color: #c46846;}   
+    h4 { font: oblique 3em Gill Sans; color: #c46846;}
+    h5 { font: oblique 3em Gill Sans}
+    p { font: normal 2em Calibri} 
+    fieldset {color: #d2691e; background-color: antiquewhite;}
+    span.capital {background-color: #c46846;color: #0b0b9c;font-family: Gill Sans; font-size: 3em;}
+    
+    /*menu inicio horizontal*/
+    #logo {float: left;width: auto;}
+    ul.horizontal{ margin: 10px 0; padding:9px; overflow:auto;  }
+    ul.horizontal li{font: normal 1.8em Gill Sans; display:block; float:left; padding:0 3em; margin: 10px 0; background-color: antiquewhite;}   
+
+/*dividido por paginas*/   
+
+    /*Principal*/
+        #tienda {background-color: aquamarine; float: left; width: 27%; overflow: auto;clear: both;margin: 1em;}
+        #Huerta {background-color:beige; float: left; width: 40%; overflow: auto; margin: 1em;}
+        #Huerta p {font-size: 5em; color: #050301;}
+        #tienda p {font-size: 5em; color: #050301;}
+        #tienda a {font: oblique 5em Gill Sans; color: #c46846;}
+        #cocina {background-color:  aquamarine;float: left; width: 27%; overflow: auto; margin: 1em;}
+        #cocina p {font-size: 5em; color: #050301;}
+        #cocina a {font: oblique 5em Gill Sans; color: #d66d47;}
+        #validate {clear:both;}
+
+    /*nosotros*/
+        #proyecto {width: 90%; margin: 0 auto; padding: 30px; background-color: beige;}
+        #cesta {float: right; overflow: auto;}
+        #acelga {float: left ; overflow: auto;}
+
+    /*cocina*/
+        #carta li{font-size: 2em; color: rgb(55, 52, 182) ;}
+        #carta a { font-size: 1em; color: red;}
+        #platos {float: left; width: 98%; overflow: auto;margin-left: 50px;}
+        #platos li{font: normal 2em Calibri; color:#0b0b9c;}
+        #entrantes {float: left; width: 45%; overflow: auto;} 
+        #principales {float: left; width: 40%; overflow: auto;}
+        #dessert {clear: both;} 
+        
+    /*DatosyPago*/
+        #DatosPersonales {float: left;}   
+        #Direccion {float:none;}         
+
+    /*contacto*/  
+        #newUser {float: left;}
+        #contacto {float: left;}
+        div.contacto {padding-top: 50px;}
+        div.contacto legend{font: oblique 5em Gill Sans; color: #d66d47;}
+
+    /*pedido y pedido cocina*/
+        #pedido {float: left; width: 97%; overflow: auto;padding-bottom: 20px;}
+        #frescos {float: left; width: 45%; overflow: auto; border-right: #d2691e medium double}
+        #limpieza {float: left; width: 45%; overflow: auto;margin-left: 30px;}
+        #envio {float:left; overflow: auto; clear: both;margin-left: 20px; padding: 50px 50px 50px 100px; background-color: beige;}
+        #menudia {overflow: auto; clear: both; padding-left: 300px;}
+        #entradas {float: left; width: 35%; overflow: auto;background-color: antiquewhite;padding-left: 100px;}
+        #primeros {float: left; width: 35%; overflow: auto;background-color: antiquewhite;}
+        #postres {float: left; width: 35%; overflow: auto;background-color: antiquewhite;padding-left: 100px;}
+        #botones {float: left; width: 35%; overflow: auto;background-color: antiquewhite;}
+        label.titulo {font: oblique 3em Gill Sans}
+
+    /*productos*/
+        ul.productos {margin-left: 20em; font: normal 2em Calibri}
+        #queTenemos {width: 90%; margin: auto; overflow: auto; background-color: beige}
+        div.imagenes {margin-left:20em;  overflow: auto;}
+        #creacesta a{font: oblique 3em Gill Sans; color: #c46846;padding-left: 500px;}
+        #creacesta p {padding-left: 300px;}
+
+    /*blog*/
+        #blog {width: 90%; margin: auto; padding: 30px ; background-color: beige;}
+        #patatas img {float: right;}
+        #girasol img {float: left;}
+        
+    /*manual*/
+        div.manual {width: 80%; margin: auto; background-color: beige;}
+        dt {font: oblique 4em calibri;}
+        dd {font: oblique 2em calibri }
