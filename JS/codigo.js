@@ -20,6 +20,11 @@
   });
   }
 
+//modificar la <li> productos añadiendo un producto al final
+  try{ 
+    document.getElementById ("limpieza").innerHTML += `<li>jabon de castilla<li>`;
+  } catch (error) {("modificacion de lista limpieza");}
+
 /*
 * declaracion de variables
 */
@@ -39,21 +44,26 @@ headings.forEach((heading) => {
 heading.style.fontFamily = 'arial';
 });
 
-//modificar los estilos css para <p> (sin ninguna asignacion especifica)
-const parrafoElement = document.querySelector("p");
-parrafoElement.style.color = "brown";
-parrafoElement.style.margin = "0.5em";
+//modificar el estilos css para <p> 
+const parrafoElement = document.querySelectorAll("p");
+parrafoElement.forEach((parrafoElement) => {
+  parrafoElement.style.color = "brown";
+  parrafoElement.style.margin = "0.5em";
+});
 
-// definimos por defecto lo que mostraran los imput de newUser
+
+// definimos por defecto lo que mostraran los imput del formulario de registro
 try{
-  const usernameElement = document.getElementById("nombre");
-  usernameElement.value = "tu nombre";
-  // otra manera de hacer lo mismo
+  const newUserElement = document.getElementById("nombre");
+  newUserElement.value = "tu nombre";
+  // otra manera de hacer lo mismo, pero aplicado a los apellidos
   document.getElementById("apellido1").value = "apellidazo1";
   document.getElementById("apellido2").value = "apellidazo2";
-} catch (error) {console.log("no se encontro el id'nombre'")}
+} catch (error) {console.log("no hay formulario de registro en esta pagina")}
 
-//previene que el usuario abandone la pagina sin guardar los cambios al registrarse o identificarse
+// 
+
+//previene que el usuario abandone la pagina sin guardar los cambios al rellenar el formulario de registro
 try{
   const form = document.querySelector('form');
   form.addEventListener('change', function() {
@@ -77,17 +87,15 @@ try{
     event.target.style.color = 'white';
   }
 
-//modificar la <li> productos
-  try{ 
-    document.getElementById ("limpieza").innerHTML += `<li>jabon de castilla<li>`;
-  } catch (error) {("modificacion de lista limpieza");}
-
-// Función que se ejecutará al pasar el ratón sobre el objeto y se ejecuta al quitar el ratón del objeto
+// Función que se ejecutará al pasar el ratón sobre el objeto (titulo principal de "nosotros" y de "blog") y  al quitar el ratón del objeto
+  //asignacion constante que hace referaencia al objeto en cuestion
   const tituloBlog = document.getElementById("tituloBlog");
+  //funcion aumentar tamaño
   function aumentar() {
     tituloBlog.style.transform = "scale(1.2)";
     tituloBlog.style.transition = "transform 0.2s ease-in-out";
   }
+  //funcion reducir tamaño 
   function reducir() {
     tituloBlog.style.transform = "scale(1)";
     tituloBlog.style.transition = "transform 0.2s ease-in-out";

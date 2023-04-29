@@ -30,16 +30,22 @@
                         <h4>Datos personales</h4>
                         <label for="nombre">Nombre</label>: 
                         <input type="text" id="nombre" name="nombre"  value=""/>
+                        <span id="helpNombre"></span>
                         <label for="apellido1">Primer apellido</label>: 
                         <input type="text" id="apellido1" name="apellido" value=""/>
+                        <span></span>
                         <label for="apellido2">Segundo apellido </label>: 
                         <input type="text" id="apellido2" name="apellido" value=""/><br/><br/>
+                        <span></span>
                         <label for="telefono">Telefono de contacto</label>:  
                         <input type="text" id="telefono" name="telefono" value=""/>
+                        <span></span>
                         <label for="correo">Correo electronico</label>:  
                         <input type="text" id="correo" name="correo" value=""/>
+                        <span></span>
                         <label for="password">Password:</label>
                         <input type="password" id="password" name="password"><br/><br/>
+                        <span></span>
                         
 
                         <button type="button" onclick="guardar()">Guardar</button>
@@ -53,10 +59,12 @@
                 <form method="post" action="../HTML/inicio.html">
                     <fieldset id="user">
                         <legend>Identificate</legend>
-                        Usuario 
+                        <label for="usuario" id="usuario">Usuario </label> 
                         <input type="text" name="nombre" id="userNombre" value=""/> 
-                        Contrase&ntilde;a
-                        <input type="password" value=""/><br/><br/>
+                        <span id="userHelp"></span>
+                        <label for="contraseña" id="contraseña">Contrase&ntilde;a</label>  
+                        <input type="password" value=""/>
+                        <span id="paswordhelp"></span><br/><br/>
                         <input type="submit" name="conectar" value="Conectarse"/>
                     </fieldset>
                 </form>  
