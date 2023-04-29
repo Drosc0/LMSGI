@@ -25,14 +25,17 @@
             <form action="../HTML/inicio.html" method="post">
                 <fieldset id="DatosPersonales">
                     <legend>Datos personales</legend>
-                    Nombre <br/>
-                    <input type="text" name="nombre" value=""/>
+                    <label> Nombre </label><br/>
+                    <input type="text" name="nombre" id="nombreContacto" value=""/>
+                    <span id="helpNContacto"></span>
                     <br/>
-                    Apellidos <br/>
-                    <input type="text" name="apellidos" value=""/>
+                    <label>Apellidos </label><br/>
+                    <input type="text" name="apellidos" id="apellidosContacto" value=""/>
+                    <span id="helpAContacto"></span>
                     <br/>
-                    Telefono de contacto <br/>
-                    <input type="text" name="telefono" value=""/>
+                    <label>Telefono de contacto </label><br/>
+                    <input type="text" name="telefono" id="telefonoContacto" value=""/>
+                    <span id="helpTContacto"></span>
                 </fieldset>
 
                 <fieldset id="Direccion">

@@ -1,12 +1,10 @@
-/*
- * Autor: Andrés Caso Iglesias
- * Fecha de creación:26/04/2023
- * Descripción: Añadidos basicos de javaScript (muchos no son necesarios, seria mas efectivo la modificacion del archivo .css)
-*/
+//------------------------------------------------------------------------------------------------------------------------------
+// Autor: Andrés Caso Iglesias
+// Fecha de creación:26/04/2023
+// Descripción: Añadidos basicos de javaScript (muchos no son necesarios, seria mas efectivo la modificacion del archivo .css)
+//------------------------------------------------------------------------------------------------------------------------------
 
-/*
-* declaracion de eventos
-*/
+/**************************************** declaracion de eventos**********************************************/
 
 // info que imprimimos por consola
   console.log("Hello, world!");
@@ -25,9 +23,7 @@
     document.getElementById ("limpieza").innerHTML += `<li>jabon de castilla<li>`;
   } catch (error) {("modificacion de lista limpieza");}
 
-/*
-* declaracion de variables
-*/
+/*************************************** declaracion de variables***********************************************/
 
 // aumenta el tamaño de los objetos del menu de inicio al pasar el raton sobre ellos y al moverse regresan al tamaño original
 const menuInicio = document.getElementById('menuInicio');
@@ -41,7 +37,7 @@ menuInicio.addEventListener('mouseout', () => {
 //cambiar font type de los <h2>
 const headings = document.querySelectorAll('h2');
 headings.forEach((heading) => {
-heading.style.fontFamily = 'arial';
+  heading.style.fontFamily = 'arial';
 });
 
 //modificar el estilos css para <p> 
@@ -51,7 +47,6 @@ parrafoElement.forEach((parrafoElement) => {
   parrafoElement.style.margin = "0.5em";
 });
 
-
 // definimos por defecto lo que mostraran los imput del formulario de registro
 try{
   const newUserElement = document.getElementById("nombre");
@@ -60,8 +55,6 @@ try{
   document.getElementById("apellido1").value = "apellidazo1";
   document.getElementById("apellido2").value = "apellidazo2";
 } catch (error) {console.log("no hay formulario de registro en esta pagina")}
-
-// 
 
 //previene que el usuario abandone la pagina sin guardar los cambios al rellenar el formulario de registro
 try{
@@ -77,9 +70,19 @@ try{
   });
 } catch (error) {console.log("no hay ningun formulario en esta pagina");}
 
-/*
-* declaracion de funciones
-*/
+//muestra un mensage de ayuda al lado del imput nombre en "datos personales" en "datosypagopedido.html"
+  try{ const nombreContacto = document.getElementById("nombreContacto");
+    //muestra mensage ayuda
+    nombreContacto.addEventListener("focus", e => {
+      document.getElementById("helpNContacto").textContent = "introduce tu nombre";
+    });
+    // oculta mensage de ayuda
+    nombreContacto.addEventListener("blur", e => {
+      document.getElementById("helpNContacto").textContent = "";
+    });
+  } catch (error) {console.log("info pedido")}
+
+/************************************declaracion de funciones**********************************************/
 
 //funcion para cambiar el color al pasasr raton sobre objeto y que se quede de ese color
   function pasarRaton() {
@@ -89,23 +92,23 @@ try{
 
 // Función que se ejecutará al pasar el ratón sobre el objeto (titulo principal de "nosotros" y de "blog") y  al quitar el ratón del objeto
   //asignacion constante que hace referaencia al objeto en cuestion
-  const tituloBlog = document.getElementById("tituloBlog");
-  //funcion aumentar tamaño
-  function aumentar() {
-    tituloBlog.style.transform = "scale(1.2)";
-    tituloBlog.style.transition = "transform 0.2s ease-in-out";
-  }
-  //funcion reducir tamaño 
-  function reducir() {
-    tituloBlog.style.transform = "scale(1)";
-    tituloBlog.style.transition = "transform 0.2s ease-in-out";
-  }
-  //llama a las funciones en el evento 
-  try{
-    tituloBlog.addEventListener("mouseenter", aumentar);
-    tituloBlog.addEventListener("mouseleave", reducir);
+  
+    const tituloBlog = document.getElementById("tituloBlog");
+    //funcion aumentar tamaño
+    function aumentar() {
+      tituloBlog.style.transform = "scale(1.2)";
+      tituloBlog.style.transition = "transform 0.2s ease-in-out";
+    }
+    //funcion reducir tamaño 
+    function reducir() {
+      tituloBlog.style.transform = "scale(1)";
+      tituloBlog.style.transition = "transform 0.2s ease-in-out";
+    }
+    //llama a las funciones en el evento 
+  try{ 
+      tituloBlog.addEventListener("mouseenter", aumentar);
+      tituloBlog.addEventListener("mouseleave", reducir);
   } catch (error){("no es necesario en esta pagina");} 
-
 
 
 
