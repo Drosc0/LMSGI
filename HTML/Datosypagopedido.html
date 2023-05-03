@@ -40,14 +40,16 @@
 
                 <fieldset id="Direccion">
                     <legend>Direccion</legend>
-                    Calle<br/>
-                    <input type="text" name="nombre" value="" maxlength="20"/>
+                    <label>Calle</label><br/>
+                    <input type="text" name="calle" id="calle" value="" maxlength="20"/>
+                    <span id="calleHelp"></span>
                     <br/>
-                    Codigo postal<br/>
-                    <input type="text" name="cp" value="" maxlength="6"/>
-                    <br/>
-                    Localidad<br/>
-                    <input type="text" name="localidad" value="" maxlength="15"/>
+                    <label>Codigo postal</label><br/>
+                    <input type="text" name="cp" id="codigoPostal" value="" maxlength="6"/>
+                    <span id="cPHelp"></span><br/>
+                    <label>Localidad</label><br/>
+                    <input type="text" name="localidad" id="localidad" value="" maxlength="15"/>
+                    <span id="localidadHelp"></span>
                 </fieldset>
 
                 <fieldset>
